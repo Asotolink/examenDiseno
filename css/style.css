@@ -1,0 +1,76 @@
+/* VARIABLES */
+:root{
+    --tamanoH4: 1.2rem;
+    --tipoLetra: Arial;
+    --paddingGeneral: 20px;
+}
+/* FUENTES */
+@font-face{
+    font-family: 'bulgariaDream';
+    src: url('../fonts/bulgariaDream.woff2') format('woff2');
+    src: url('../fonts/bulgariaDream.woff') format('woff');
+    src: url('../fonts/bulgariaDream.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Wellington';
+    src: url('../fonts/Wellington.woff2') format('woff2');
+    src: url('../fonts/Wellington.woff') format('woff');
+    src: url('../fonts/Wellington.ttf') format('truetype');
+}
+
+/* CONTENEDOR */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 430px;
+    margin: auto auto;
+    padding: var(--paddingGeneral);
+    background-color: antiquewhite;
+}
+
+header{
+    margin-bottom: 80px;
+}
+
+/* Tamaño y fuente de los H y P*/
+h4{
+    font-size: var(--tamanoH4);
+}
+
+h4, h5, h6{
+    font-family: var(--tipoLetra);
+}
+
+h4, h5{
+    margin: 8px;
+}
+
+h6{
+    margin-top: 0;
+    font-family: "bulgariaDream";
+    font-size: 1.2rem;
+}
+
+
+p{
+    margin-bottom: 5px;
+    font-family: "Wellington";
+}
+
+/* Barra de separación */
+.separacion{
+    width: 70%;
+    height: 3px;
+    background-color: black;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/* Iconos redes sociales */
+.iconos{
+    display: flex;
+    justify-content: space-around;
+}
